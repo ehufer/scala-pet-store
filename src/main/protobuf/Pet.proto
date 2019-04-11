@@ -20,7 +20,7 @@ message UpdatePetRequest {
 }
 
 message GetPetRequest {
-    string id = 1;
+    int64 id = 1;
 }
 
 message ListPetsRequest {
@@ -29,13 +29,11 @@ message ListPetsRequest {
 }
 
 message ListPetsByStatusRequest {
-    ListPetsRequest request     = 1;
-    Pet.Status  pet_status      = 2;
+    repeated Pet.Status statuses  = 1;
 }
 
 message ListPetsByTagRequest {
-    ListPetsRequest request     = 1;
-    string          tag         = 2;
+    repeated string tags        = 1;
 }
 
 message ListPetsResponse {
