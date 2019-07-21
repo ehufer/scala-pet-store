@@ -1,5 +1,5 @@
 Scala Pet Store [![Build Status][build-badge]][build-link] [![Chat][gitter-badge]][gitter-link]
-==============
+===============
 An implementation of the java pet store using FP techniques in scala.
 
 # Thank you!
